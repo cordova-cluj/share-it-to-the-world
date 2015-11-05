@@ -28,8 +28,14 @@ angular.module('starter.controllers', [])
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('AccountCtrl', function ($scope) {
+    $scope.settings = {
+        enableFriends: true
+    };
+})
+
+.controller('PicturesCtrl', function ($scope) {
+    $scope.settings = {
+        enableFriends: true
+    };
 });

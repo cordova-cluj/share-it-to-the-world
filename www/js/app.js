@@ -79,13 +79,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
   .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      url: '/account',
+      views: {
+          'tab-account': {
+              templateUrl: 'templates/tab-account.html',
+              controller: 'AccountCtrl'
+          }
       }
-    }
+  })
+
+  .state('tab.pictures', {
+      url: '/pictures',
+      views: {
+          'tab-pictures': {
+              templateUrl: 'templates/tab-pictures.html',
+              controller: 'PicturesCtrl'
+          }
+      }
   });
 
   // if none of the above states are matched, use this as the fallback
